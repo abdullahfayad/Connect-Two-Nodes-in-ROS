@@ -1,0 +1,11 @@
+To create a ROS workspace you should follow these steps:
+1- Create a folder with the name that you want
+2- Inside it, create a folder with the name ‘src’, and type this command “catkin_init_workspace”
+3- Go back to the root and type this command “catkin_make”, if you work with python3 as in my case so you should type this command instead of the previous one “catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3”
+All these steps are shown in the figure “workspace.png”.
+
+To create a package all you should do is typing the following commands in the root :
+1- “catkin_create_pkg robot rospy roscpp std_msgs”
+2- “catkin_make”
+
+To create a node inside a package you have to create a folder inside this package called “scripts” for example, inside this folder you can create python files (nodes) like node1.py and node2.py  
